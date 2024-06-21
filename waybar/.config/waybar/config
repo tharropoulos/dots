@@ -1,0 +1,50 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+// Sleek
+
+{
+"include": "~/.config/waybar/modules",
+"layer": "top",
+"position": "top",
+"height": 1,
+"margin-left": 0,
+"margin-right": 0,
+"margin-top": 0,
+	
+"modules-left": [
+  "custom/menu",
+	"custom/separator#blank_2",
+	"custom/separator#blank_2",
+	"hyprland/window"
+],
+
+"modules-center": [		
+	"hyprland/workspaces#4"	,
+
+],
+		
+"modules-right": [
+  "tray",
+	"pulseaudio",
+  "bluetooth",
+  "battery",
+	"clock",
+	],
+
+
+// Additional format / customize modules
+
+"hyprland/language": {
+  "format": "{short} {variant}",
+  "keyboard-name": "by-tech-usb-gaming-keyboard",
+  "on-click": "hyprctl switchxkblayout by-tech-usb-gaming-keyboard next"
+},
+"tray": {
+    "spacing": 10
+},
+
+"clock": {
+	//"format": "{:%I:%M %p - %d/%b}", //for AM/PM
+    //"format": "{:%H:%M - %d/%b}", // 24H
+	"tooltip": false
+},
+}

@@ -1,0 +1,39 @@
+live_config_reload: true
+
+font:
+  size: 16
+  # offset:
+  #   y: 5
+  # glyph_offset:
+  #   y: 5
+  normal:
+    family: "JetBrainsMono Nerd Font"
+window:
+  padding:
+    x: 10
+    y: 5
+  dimensions:
+    columns: 120
+    lines: 40
+  opacity: 0.99
+  decorations: none
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+
+
+cursor:
+  unfocused_hollow: true
+  style:
+    blinking: Never
+
+env:
+  TERM: xterm-256color
+
+scrolling:
+  history: 2000
+  auto_scroll: true
+
+selection:
+  semantic_escape_chars: '|:"'' {}()[]<>'
+  save_to_clipboard: true
+

@@ -1,0 +1,216 @@
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family:
+    Material Design Icons,
+    SF Pro Display;
+  font-size: 12px;
+}
+
+window#waybar {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/* This section can be use if you want to separate waybar modules */
+.modules-left,
+.modules-center,
+.modules-right {
+  /* border: 0.5px solid @overlay0; */
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+/* .modules-left, */
+/* .modules-right { */
+/*   padding-top: 2px; */
+/*   padding-bottom: 2px; */
+/*   padding-right: 4px; */
+/*   padding-left: 4px; */
+/* } */
+#backlight,
+#backlight-slider,
+#battery,
+#bluetooth,
+#clock,
+#cpu,
+#disk,
+#idle_inhibitor,
+#keyboard-state,
+#memory,
+#mode,
+#mpris,
+#network,
+#pulseaudio,
+#pulseaudio-slider,
+#taskbar button,
+#taskbar,
+#temperature,
+#tray,
+#window,
+#wireplumber,
+#workspaces,
+#custom-backlight,
+#custom-cycle_wall,
+#custom-keybinds,
+#custom-keyboard,
+#custom-light_dark,
+#custom-lock,
+#custom-menu,
+#custom-power_vertical,
+#custom-power,
+#custom-swaync,
+#custom-updater,
+#custom-weather,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight,
+#custom-weather.default,
+#custom-weather.rainyDay,
+#custom-weather.rainyNight,
+#custom-weather.severe,
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight,
+#custom-weather.sunnyDay {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+window#waybar.hidden {
+  opacity: 0.1;
+}
+
+#window {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#clock,
+#custom-media,
+#tray,
+#mode,
+#custom-lock,
+#workspaces,
+#idle_inhibitor,
+#custom-power-menu,
+#battery,
+#pulseaudio,
+#network,
+#language,
+#custom-bluetooth-status {
+  color: #ffffff;
+  /* margin-top: 2px; */
+  /* margin-bottom: 2px; */
+  /* padding-left: 20px; */
+}
+
+#custom-bluetooth-status {
+  padding-right: 8px;
+}
+
+#custom-notify {
+  padding-left: 25px;
+}
+
+#custom-lock {
+  padding-left: 25px;
+  padding-right: 8px;
+}
+
+#custom-fast-control-menu {
+  padding-left: 25px;
+}
+#tray {
+  color: #ffffff;
+  /* padding-right: 8px; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}
+
+#workspaces {
+  padding: 2px;
+  border-radius: 12px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: transparent;
+}
+
+#workspaces button {
+  color: rgba(255, 255, 255, 0.2);
+  padding: 1px;
+  padding-right: 4px;
+  margin: 0px 3px;
+  background-color: transparent;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#workspaces button.active {
+  color: #ffffff;
+  border-radius: 10px;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+  opacity: 1;
+}
+
+#workspaces button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  min-width: 50px;
+  border-radius: 10px;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#custom-bluetooth-status {
+  padding-top: 4px;
+  font: 0.9em sans-serif;
+}
+
+#custom-fast-control-menu {
+  font-size: 18px;
+  padding-top: 4px;
+}
+
+#pulseaudio,
+#pulseaudio.muted {
+}
+
+#network.disconnected {
+  color: #fff;
+}
+
+#battery {
+  /* color: #8fbcbb; */
+}
+
+#battery.critical,
+#battery.warning,
+#battery.full,
+#battery.plugged {
+  /* color: #8fbcbb; */
+}
+
+@keyframes blink {
+  to {
+    background-color: rgba(30, 34, 42, 0.5);
+    color: #abb2bf;
+  }
+}
+
+#battery.warning {
+  color: #ecd3a0;
+}
+
+#battery.critical:not(.charging) {
+  color: #fb958b;
+}

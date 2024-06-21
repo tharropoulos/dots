@@ -1,0 +1,62 @@
+live_config_reload = true
+import = [
+  "~/.config/alacritty/catppuccin/catppuccin-mocha.toml"
+]
+[cursor]
+unfocused_hollow = true
+
+[cursor.style]
+blinking = "Never"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 15
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001B."
+key = "."
+mods = "Super"
+
+[[keyboard.bindings]]
+chars = "\u001Bh"
+key = "Enter"
+mods = "Super"
+
+[[keyboard.bindings]]
+chars = "\u001Bh"
+key = "H"
+mods = "Super"
+
+[[keyboard.bindings]]
+chars = "\u001Bl"
+key = "L"
+mods = "Super"
+
+[scrolling]
+history = 2000
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = "|:\"' {}()[]<>"
+
+[window]
+decorations = "full"
+opacity = 0.96
+
+[window.dimensions]
+columns = 120
+lines = 40
+
+[window.padding]
+x = 10
+y = 5
